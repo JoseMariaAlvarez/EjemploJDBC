@@ -10,3 +10,5 @@ La clase que se encarga de comunicarse con la base de datos está implementada s
 El objeto singular de esta clase de interfaz con la base de datos se está usando como variable global, lo que es una mala práctica de diseño. Se debería pasar como parámetro a las clases que lo usen.
 
 No se ha usado ni el patrón Observador ni el Publicador/Suscriptor, que pueden mejorar la comunicación entre las clases de la vista y las de modelo.
+
+Dependencias: Para conectarse a la base de datos, JDBC usa el driver de MySQL. Ese driver está en el archivo mysql-connector-java-5.1.49.jar. El archivo se puede descargar desde la página https://dev.mysql.com/downloads/connector/j/5.1.html. Para instalarlo, se puede bajar el archivo en formato zip, extraer de él el archivo .jar, copiarlo a una carpeta conocida y añadirlo al proyecto a través de la opción Configurar Build Path como nuevo External JAR.
